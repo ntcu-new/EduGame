@@ -1,0 +1,163 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    box-sizing: border-box;
+    margin: auto 0;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Noto Sans TC", sans-serif;
+    background-color: #f7eddf;
+}
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+}
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 10px 0;
+    @media screen and (max-width:768px) { 
+        font-size: 3rem;
+    }
+}
+.game{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    
+}
+.card{
+    width: calc(25% - 10px);
+    height: 120px;
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #fff;
+    display: flex;
+}
+
+.front,
+.back {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    position: absolute;
+    border-radius: 5px;
+    background-color: #fff;
+    backface-visibility: hidden;
+}
+.card:active {
+    transform: scale(0.9);
+    transition: transform .5s;
+
+}
+
+.card.flip {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.front {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        height: 100%;
+        @media screen and (max-width:768px) { 
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+.back{
+    background: radial-gradient(rgba(#f68966,.7) 8%, transparent 1%), linear-gradient(30deg, transparent 50%, rgba(#f68966,.7) 50% 51%, transparent 51%), linear-gradient(-30deg, transparent 50%, rgba(#f68966,.7) 50% 51%, transparent 51%);
+        background-size: 3em 1.75em;
+        background-color: #ea1c34;
+}
+
+
+.poker {
+    color: #f22e36;
+    position: absolute;
+    font-size: 8rem;
+    z-index: -5;
+    right: 30%;
+    top: 0;
+    transform: rotate(-30deg);
+    @media screen and (max-width:768px) { 
+        left: 10%;
+        top: 0;
+    }
+}
+.poker-1 {
+    left: 20%;
+    top: 20%;
+    transform: rotate(30deg);
+    font-size: 10rem;
+    color: #444;
+    @media screen and (max-width:768px) { 
+        left: 50%;
+        top: 60%;
+    }
+}
+
+.msg{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+    border-radius: 15px;
+}
+
+.reset{
+    text-decoration: none;
+    color:#f7eddf;
+    margin-left: 15px;
+}
+
+.home-btn {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f7eddf;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #ea1c34;
+    cursor: pointer;
+    transition: .3s;
+    color: black;
+    text-decoration: none;
+    &:hover{
+        color: #f7eddf;
+        background-color: #972734;
+    }
+}

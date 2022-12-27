@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "人",
+        "titleViet": "Mọi người",
+        "photo": "./images/人.png"
+    },
+    {
+        "id": 2,
+        "title": "大象",
+        "titleViet": "Con voi",
+        "photo": "./images/大象.png"
+    },
+    {
+        "id": 3,
+        "title": "佛像",
+        "titleViet": "tượng Phật",
+        "photo": "./images/佛像.png"
+    },
+    {
+        "id": 4,
+        "title": "兩個人",
+        "titleViet": "Hai người",
+        "photo": "./images/兩個人.png"
+    },
+    {
+        "id": 5,
+        "title": "和尚",
+        "titleViet": "tu sĩ",
+        "photo": "./images/和尚.png"
+    },
+    {
+        "id": 6,
+        "title": "房子",
+        "titleViet": "nhà ở",
+        "photo": "./images/房子.png"
+    },
+    {
+        "id": 7,
+        "title": "枕頭",
+        "titleViet": "Cái gối",
+        "photo": "./images/枕頭.png"
+    },
+    {
+        "id": 8,
+        "title": "花",
+        "titleViet": "hoa",
+        "photo": "./images/花.png"
+    },
+    {
+        "id": 9,
+        "title": "國旗",
+        "titleViet": "Quốc kỳ",
+        "photo": "./images/國旗.png"
+    },
+    {
+        "id": 10,
+        "title": "涼亭",
+        "titleViet": "tiểu đình",
+        "photo": "./images/涼亭.png"
+    },
+    {
+        "id": 11,
+        "title": "船",
+        "titleViet": "chiếc phà",
+        "photo": "./images/船.png"
+    },
+    {
+        "id": 12,
+        "title": "禮拜",
+        "titleViet": "thờ cúng",
+        "photo": "./images/禮拜.png"
+    }
+]

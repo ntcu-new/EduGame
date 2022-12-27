@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00d48d" />
+    <title>拼拼樂</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <i class="fa-solid fa-puzzle-piece puzzle-1 puzzle"></i>
+        <i class="fa-solid fa-puzzle-piece puzzle-2 puzzle"></i>
+        <div class="game"  v-cloak>
+            <h1>單詞拼拼樂</h1>
+            <div class="question">
+                請拼出：{{question}}
+                <a href="./" class="reset"><i class="fa-solid fa-arrows-rotate"></i></a>
+            </div>
+            <div class="answer">
+                答案：{{answer}}
+            </div>
+            <div class="area">
+                作答區：
+                <span class="reply" v-for="(el,index) in reply" @click="back(index)">{{el}}</span>
+            </div>
+            <div class="elements">
+                材料：
+                <span class="element" v-for="(el,index) in elements" @click="use(index)">{{el}}</span>
+            </div>
+            <div class="msg">
+                {{msg}}
+            </div>
+        </div>
+        <a class="home-btn" href="/">
+            <i class="fa-solid fa-house"></i>
+        </a>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

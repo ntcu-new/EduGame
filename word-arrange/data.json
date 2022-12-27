@@ -1,0 +1,22 @@
+[{
+    "question":"蘋果",
+    "answer": ["A","P","P","L","E"]
+},{
+    "question":"您好",
+    "answer": ["Xin","chào"]
+},{
+    "question":"我很高興",
+    "answer": ["Tôi","rất","vui","vẻ"]
+},{
+    "question":"我想喝水",
+    "answer": ["Tôi","muốn","uống","nước"]
+},{
+    "question":"我是臺灣人",
+    "answer": ["Tôi","là","người","Đài","Loan"]
+},{
+    "question":"對不起",
+    "answer": ["Xin","lỗi"]
+},{
+    "question":"這個多少錢啊？",
+    "answer": ["Cái","này","bao","nhiêu","tiền","ạ?"]
+}]
